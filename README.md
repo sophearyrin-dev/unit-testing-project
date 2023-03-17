@@ -21,6 +21,8 @@ public class ProductionConfiguration {
 ## Method
 - The assertThat is one of the JUnit methods from the Assert object that can be used to check if a specific value match to an expected one.
 - To capture the method arguments, you need to use the capture() method of ArgumentCaptor. You should call it during the verification phase of the test.
+- assertEqual(expectedValue, actualValue)
+- assertTrue(add(2,2) == 4)
 ## Mockito
 Mockito
 For injecting Mockito Mocks into Spring Beans, we need to add the Mockito-core dependency in our build configuration file.
@@ -36,3 +38,14 @@ For injecting Mockito Mocks into Spring Beans, we need to add the Mockito-core d
    <scope>test</scope>
 </dependency>
 ```
+
+## Junit5
+```
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+```
+
